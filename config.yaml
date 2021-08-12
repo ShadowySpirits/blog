@@ -1,11 +1,10 @@
-baseurl: https://example.com
+baseurl: https://blog.lv5.moe
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
 title: SSpiritsの秘密基地
 hasCJKLanguage: true
 enableEmoji: true
-pygmentsUseClasses: true
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack

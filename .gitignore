@@ -1,4 +1,5 @@
 # Default ignored files
+.DS_Store
 /.idea/
 ### Hugo template
 # Generated files by hugo
