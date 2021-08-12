@@ -6,9 +6,6 @@ title: SSpiritsの秘密基地
 hasCJKLanguage: true
 enableEmoji: true
 
-# Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
-
 # GA Tracking ID
 googleAnalytics:
 
@@ -25,7 +22,7 @@ params:
     - post
   featuredImageField: image
   rssFullContent: true
-  favicon: favicon.ico
+  favicon: /favicon.ico
 
   footer:
     since: 2020
@@ -52,7 +49,14 @@ params:
 
   comments:
     enabled: true
-    provider: disqus
+    provider: disqusjs
+
+    disqusjs:
+      shortname: sspirits-blog
+      apiUrl: https://disqus.lv5.moe/api/
+      apiKey: iQD56ghANUh7XtvTtUTMvaHj1hFm59ABSUqHSfLnShxDj0xf9awYvpdPdcGbFeMG
+      admin: sspirits
+      adminLabel: 尊贵的站长
 
     utterances:
       repo:
@@ -86,9 +90,10 @@ params:
       card: summary_large_image
 
   defaultImage:
-    enabled: true
-    local: false
-    src: https://source.unsplash.com/random/800x300?featured=anime
+    post:
+      enabled: true
+      local: false
+      src: https://source.unsplash.com/random/800x300?featured=anime
     opengraph:
       enabled: true
       local: false
