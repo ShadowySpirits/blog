@@ -12,7 +12,9 @@ categories:
   - 杂七杂八的分享
 ---
 
-i> kms 激活适用于批量授权版本，即 VL 版的 Windows 和 Office
+{{< tip info >}}
+kms 激活适用于批量授权版本，即 VL 版的 Windows 和 Office
+{{< /tip >}}
 
 ## 使用方法
 

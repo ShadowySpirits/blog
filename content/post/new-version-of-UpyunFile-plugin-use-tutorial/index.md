@@ -26,7 +26,9 @@ categories:
 
  <!-- More -->
 
-!> 又拍云 SDK 仅支持 PHP >= 5.6 的环境
+{{< tip warning >}}
+又拍云 SDK 仅支持 PHP >= 5.6 的环境
+{{< /tip >}}
 
 ## 使用方法
 
@@ -43,7 +45,9 @@ categories:
 4.  启用 Token 防盗链需在又拍云控制台中启用 Token 防盗链并将密钥填入插件相应位置
 5.  自定义目录结构可以在 Typecho 根目录下的 config.inc.php 中添加代码 `define('__TYPECHO_UPLOAD_DIR__', '/path/to/uploads');` 并设置目录结构为 `Typecho结构`。
 
-!> Token 防盗链功能只能修改 HTML 代码中的 CDN 链接，如果需要引入字体图片等资源请内联 CSS
+{{< tip warning >}}
+Token 防盗链功能只能修改 HTML 代码中的 CDN 链接，如果需要引入字体图片等资源请内联 CSS
+{{< /tip >}}
 
 ## 更新记录：
 
@@ -70,4 +74,6 @@ categories:
 
 - 解决兼容性问题
 
-!> 如果你有使用上的问题请在提问时写清楚你的 **php** 和 **typecho** 版本以及**报错信息**，否则一律不予回复
+{{< tip warning >}}
+如果你有使用上的问题请在提问时写清楚你的 **php** 和 **typecho** 版本以及**报错信息**，否则一律不予回复
+{{< /tip >}}

@@ -51,4 +51,6 @@ curl https://raw.githubusercontent.com/ShadowySpirits/vps-setup/master/nginx_ins
 sudo service nginx start/stop/restart
 ```
 
-!> 此脚本依赖的代码仓库多位于国外服务器，如安装失败请检查是否是网络问题
+{{< tip warning >}}
+此脚本依赖的代码仓库多位于国外服务器，如安装失败请检查是否是网络问题
+{{< /tip >}}

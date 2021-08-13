@@ -28,7 +28,9 @@ categories:
 
 因为 Nextcloud14 无法直接升级到 15，所以我采用全新安装的方式。安装完成后用备份恢复数据。详细流程可以参照文档中的 [Migrating to a different server](https://docs.nextcloud.com/server/15/admin_manual/maintenance/migrating.html#migrating-to-a-different-server)
 
-i> 将旧的 data 文件夹复制过去后需要用 sudo -uwww php occ files:scan --all 扫描更改
+{{< tip info >}}
+将旧的 data 文件夹复制过去后需要用 sudo -uwww php occ files:scan --all 扫描更改
+{{< /tip >}}
 
 ## 优化心得
 

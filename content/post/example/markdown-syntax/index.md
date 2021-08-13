@@ -149,3 +149,23 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+{{< tip info >}}
+this is a info tip
+{{< /tip >}}
+
+{{< tip share >}}
+this is a share tip
+{{< /tip >}}
+
+{{< tip success >}}
+this is a success tip
+{{< /tip >}}
+
+{{< tip warning >}}
+this is a warning tip
+{{< /tip >}}
+
+{{< tip error >}}
+this is a error tip
+{{< /tip >}}

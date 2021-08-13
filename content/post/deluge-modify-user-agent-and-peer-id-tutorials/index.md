@@ -20,7 +20,9 @@ PS：附部分 BT 下载工具 user-agent 和 peer-id 列表
 
 打开文件 `/usr/lib/python3/dist-packages/deluge/core/core.py`
 
-!> 如果 core.py 不在上述位置可以使用 find 命令找到 core.py 的位置：sudo find / -path '\*deluge/core/core.py'
+{{< tip warning >}}
+如果 core.py 不在上述位置可以使用 find 命令找到 core.py 的位置：sudo find / -path '\*deluge/core/core.py'
+{{< /tip >}}
 
 修改 123 行左右：
 
@@ -41,7 +43,9 @@ peer_id = substitute_chr(peer_id, 6, release_chr)
 + return '-TR2110-'
 ```
 
-i> 虽然这是 Deluge 2.0.3 的教程，但 Deluge 其他版本修改方式大同小异，搜索字符串 user_agent 和 peer_id 也能找到关键代码位置
+{{< tip info >}}
+虽然这是 Deluge 2.0.3 的教程，但 Deluge 其他版本修改方式大同小异，搜索字符串 user_agent 和 peer_id 也能找到关键代码位置
+{{< /tip >}}
 
 ## 部分 BT 下载工具 user-agent 和 peer-id 列表
 

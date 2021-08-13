@@ -82,8 +82,9 @@ inline fun html(init: HTML.() -> Unit): HTML {
     return html
 }
 ```
-
-i> 这里使用内联函数来避免 Lambda 表达式的开销
+{{< tip info >}}
+这里使用内联函数来避免 Lambda 表达式的开销
+{{< /tip >}}
 
 其他标签同理，所以我们可以构建一个泛型函数：
 

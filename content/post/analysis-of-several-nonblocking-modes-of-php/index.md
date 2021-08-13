@@ -57,7 +57,10 @@ output:
 ### CURLOPT_TIMEOUT_MS
 
 这个参数在 curl 7.16.2 中被加入，用于设置毫秒级的 timeout
-!> 如果 libcurl 编译时使用系统标准的名称解析器（ standard system name resolver），那部分的连接仍旧使用以秒计的超时解决方案，最小超时时间还是一秒钟
+
+{{< tip warning >}}
+如果 libcurl 编译时使用系统标准的名称解析器（ standard system name resolver），那部分的连接仍旧使用以秒计的超时解决方案，最小超时时间还是一秒钟
+{{< /tip >}}
 
 ```php
 function curl() {
