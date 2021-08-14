@@ -7,7 +7,7 @@ hasCJKLanguage: true
 enableEmoji: true
 
 # GA Tracking ID
-googleAnalytics:
+googleAnalytics: G-QNTL14TJQR
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn
