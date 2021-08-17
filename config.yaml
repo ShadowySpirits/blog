@@ -90,14 +90,18 @@ params:
       card: summary_large_image
 
   defaultImage:
-    post:
+    articleList:
       enabled: true
       local: false
-      src: https://source.unsplash.com/random/800x300?featured=anime
+      src: https://tenapi.cn/acg?v=<>
+    article:
+      enabled: true
+      local: false
+      src: https://tenapi.cn/acg?v=<>
     opengraph:
       enabled: true
       local: false
-      src: https://source.unsplash.com/random/820x250?featured=anime
+      src: https://source.unsplash.com/random/820x250?featured=<>
 
   colorScheme:
     # Display toggle
