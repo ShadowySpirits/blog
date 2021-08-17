@@ -5,6 +5,7 @@ paginate: 5
 title: SSpiritsの秘密基地
 hasCJKLanguage: true
 enableEmoji: true
+enableGitInfo: true
 
 # GA Tracking ID
 googleAnalytics: G-QNTL14TJQR
@@ -40,7 +41,7 @@ params:
       src: img/avatar.jpg
 
   article:
-    math: false
+    math: true
     toc: true
     readingTime: true
     license:
