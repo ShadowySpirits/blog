@@ -11,7 +11,7 @@ categories:
 
 此脚本适用于 Ubuntu，自动编译安装 nginx
 
-<!-- More -->
+<!--more-->
 
 ## 为什么需要此脚本
 

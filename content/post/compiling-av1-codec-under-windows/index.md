@@ -14,7 +14,7 @@ categories:
 
 AV1 全称 AOMedia Video 1 是 AOM (Alliance for Open Media) 在 2018 年推出的新一代视频编码标准，其设计目的是提供更好的质量、更小的体积，以用于在互联网上传输高质量的视频。目前 Chrome 69 和 Firefox 63 中都添加了对 AV1 的支持（需要手动开启），LAV 在 [0.73](https://github.com/Nevcairiel/LAVFilters/releases/tag/0.73) 中开始支持对 AV1 的解码。
 
-<!-- More -->
+<!--more-->
 
 ![codec timeline](codec-timeline.jpg)
 更详细的介绍可以参考以下两篇文章：

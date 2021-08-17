@@ -24,7 +24,7 @@ categories:
 - 新增：接入又拍云图片处理功能
 - 新增：为博客静态资源加入 Token 防盗链
 
- <!-- More -->
+<!--more-->
 
 {{< tip warning >}}
 又拍云 SDK 仅支持 PHP >= 5.6 的环境
