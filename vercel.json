@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/disqus-proxy/(.*)",
+            "destination": "/api/disqus_proxy.go"
+        }
+    ]
+}

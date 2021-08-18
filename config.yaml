@@ -54,7 +54,7 @@ params:
 
     disqusjs:
       shortname: sspirits-blog
-      apiUrl: https://disqus.lv5.moe/api/
+      apiUrl: https://blog.lv5.moe/api/disqus-proxy/
       apiKey: iQD56ghANUh7XtvTtUTMvaHj1hFm59ABSUqHSfLnShxDj0xf9awYvpdPdcGbFeMG
       admin: sspirits
       adminLabel: 尊贵的站长

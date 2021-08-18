@@ -1,3 +1,6 @@
 [submodule "themes/hugo-theme-stack"]
 	path = themes/hugo-theme-stack
 	url = https://github.com/ShadowySpirits/hugo-theme-stack
+[submodule "api"]
+	path = api
+	url = https://github.com/ShadowySpirits/blog-api
