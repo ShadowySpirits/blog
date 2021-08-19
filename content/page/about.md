@@ -1,33 +1,27 @@
 ---
 title: About
-description: Hugo, the world's fastest framework for building websites
+description: 关于我 & 留言板
+image: img/67649057_p0.jpg
 date: '2019-02-28'
 aliases:
   - about-us
-  - about-hugo
+  - about-me
   - contact
-license: CC BY-NC-ND
-lastmod: '2020-10-09'
 menu:
     main: 
         weight: -90
         pre: user
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+博主标签：
+技术宅、动漫爱好者、京吹、懒癌晚期、氪不改命
 
-Hugo makes use of a variety of open source projects including:
+博主联系方式：
+[Github](https://github.com/ShadowySpirits)
+[邮箱：admin@lv5.moe](mailto:admin@lv5.moe)
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+本博客使用 [Hugo](https://gohugo.io/) 搭建，由 [Vercel](https://vercel.com/) 提供部署服务，主题基于 [CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack) 魔改，若有人喜欢本站样式请自行到我的 GitHub 取用： [ShadowySpirits/hugo-theme-stack](https://github.com/ShadowySpirits/hugo-theme-stack)，给我留一个版权声明即可。
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+{{< tip >}}
+PS. 本文头图是母校非著名景观
+{{< /tip >}}

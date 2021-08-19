@@ -93,16 +93,16 @@ params:
   defaultImage:
     articleList:
       enabled: true
-      local: false
-      src: https://tenapi.cn/acg?v=<>
+      local: true
+      src: img/
     article:
       enabled: true
-      local: false
-      src: https://tenapi.cn/acg?v=<>
+      local: true
+      src: img/
     opengraph:
       enabled: true
       local: false
-      src: https://source.unsplash.com/random/820x250?featured=<>
+      src: https://source.unsplash.com/random/820x250?featured=<version>
 
   colorScheme:
     # Display toggle
@@ -113,7 +113,7 @@ params:
 
   imageProcessing:
     cover:
-      enabled: true
+      enabled: false
     content:
       enabled: true
 
