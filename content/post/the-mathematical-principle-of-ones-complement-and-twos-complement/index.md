@@ -3,6 +3,7 @@ title: 反码和补码的数学原理
 slug: the-mathematical-principle-of-ones-complement-and-twos-complement
 image: img/58255799_p0.jpg
 date: 2021-08-16T19:18:16+08:00
+math: true
 tags:
   - Math
 categories:

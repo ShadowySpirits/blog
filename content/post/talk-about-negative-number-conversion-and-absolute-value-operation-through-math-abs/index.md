@@ -2,6 +2,7 @@
 title: 由 Math.abs 谈负数转换与绝对值运算
 slug: talk-about-negative-number-conversion-and-absolute-value-operation-through-math-abs
 date: 2021-08-16T15:53:15+08:00
+math: true
 tags:
   - Java
   - Math
