@@ -6,7 +6,7 @@ image: kotlin-logo.png
 tags:
   - Kotlin
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 ## 什么是 DSL

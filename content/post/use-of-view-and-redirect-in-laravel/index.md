@@ -7,7 +7,7 @@ tags:
   - PHP
   - Laravel
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 ## 一、 view() 的使用

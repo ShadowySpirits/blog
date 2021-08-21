@@ -2,11 +2,10 @@
 title: 原生安卓 WiFi 4G 信号去叹号去叉教程
 slug: native-android-wifi-4g-signal-exclamation-defork-tutorial
 date: 2018-10-30T16:13:00+08:00
-# image: 万兆网络拓扑图.png
 tags:
   - Android
 categories:
-  - 某不存在的技术
+  - share
 ---
 
 适用于 7.1.2+ :

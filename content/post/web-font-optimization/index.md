@@ -7,7 +7,7 @@ image: blog_title.jpg
 tags:
   - font
 categories:
-  - 某不存在的技术
+  - share
 ---
 
 如果你想在网页中引入一些花式字体，比如这样：

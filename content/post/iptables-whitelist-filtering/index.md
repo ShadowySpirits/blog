@@ -6,7 +6,7 @@ tags:
   - Linux
   - iptables
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 ## iptables 过滤参数介绍

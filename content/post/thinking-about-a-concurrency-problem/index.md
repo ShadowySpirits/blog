@@ -6,7 +6,7 @@ tags:
   - Java
   - Concurrent
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 遇到了一个并发问题，将对锁的设计的思考记录一下：

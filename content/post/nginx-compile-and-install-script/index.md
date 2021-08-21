@@ -6,7 +6,7 @@ image: nginx-logo.jpg
 tags:
   - Nginx
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 此脚本适用于 Ubuntu，自动编译安装 nginx

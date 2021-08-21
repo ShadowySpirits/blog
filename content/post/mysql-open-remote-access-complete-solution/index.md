@@ -6,7 +6,7 @@ image: security-groups.jpg
 tags:
   - Mysql
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 ## 适用环境

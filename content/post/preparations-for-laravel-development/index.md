@@ -5,7 +5,7 @@ date: 2019-02-23T23:24:00+08:00
 tags:
   - Laravel
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 因为某些原因需要搞个 laravel 项目，于是乎翻出此前的文章补充记录下 laravel 开发准备工作。

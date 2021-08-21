@@ -7,7 +7,7 @@ tags:
   - Typecho
   - 博客迁移
 categories:
-  - 杂七杂八的分享
+  - share
 ---
 
 本站最近从 Typecho 迁移到 Hugo，写这篇文章分析一下 Typecho 和 Hugo 各自的优缺点，给读者在这两者之间选择提供参考。最后记录一下我的迁移过程供后来者参考：Typecho 在服务器已经挂掉的情况下如何恢复所有的文章，然后保存为 Hugo 的文件组织方式

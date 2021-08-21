@@ -9,8 +9,7 @@ tags:
   - 又拍云
   - CDN
 categories:
-  - 某不存在的技术
-  - 杂七杂八的分享
+  - share
 ---
 
 ## 说明

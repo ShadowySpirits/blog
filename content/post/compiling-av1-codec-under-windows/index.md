@@ -7,7 +7,7 @@ tags:
   - Media
   - Codec
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 ## 什么是 AV1

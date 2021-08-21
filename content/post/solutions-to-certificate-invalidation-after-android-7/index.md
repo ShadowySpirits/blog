@@ -7,7 +7,7 @@ image: ssl-handshake-failed.jpg
 tags:
   - Android
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 ## 背景

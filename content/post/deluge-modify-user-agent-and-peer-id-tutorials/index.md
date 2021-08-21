@@ -6,8 +6,8 @@ image: deluge-logo.jpg
 tags:
   - BT/PT
 categories:
-  - 某不存在的技术
-  - 杂七杂八的分享
+  - tech
+  - share
 ---
 
 本文提供一种修改 Deluge 的 user-agent 和 peer-id 的方法，用于伪装其他 BT 下载工具，绕过某些限制

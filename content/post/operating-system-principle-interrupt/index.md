@@ -7,7 +7,7 @@ tags:
   - Operating System
   - Linux
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 > **中断**（英语：Interrupt）是指处理器接收到来自硬件或软件的信号，提示发生了某个事件，应该被注意，这种情况就称为中断。[^1]

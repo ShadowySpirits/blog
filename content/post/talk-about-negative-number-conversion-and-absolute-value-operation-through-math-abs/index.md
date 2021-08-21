@@ -6,7 +6,7 @@ tags:
   - Java
   - Math
 categories:
-  - 某不存在的技术
+  - tech
 ---
 
 本文通过分析一个 Java 中 `Math.abs()` 误用引发的 bug 介绍了计算机中数的储存、负数转换与绝对值运算

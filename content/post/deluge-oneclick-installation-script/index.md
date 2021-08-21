@@ -6,8 +6,8 @@ image: deluge-logo.jpg
 tags:
   - BT/PT
 categories:
-  - 某不存在的技术
-  - 杂七杂八的分享
+  - tech
+  - share
 ---
 
 此脚本适用于 Ubuntu，自动安装 deluged 和 deluge-webui

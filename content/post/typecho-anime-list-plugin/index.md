@@ -7,8 +7,7 @@ image: typecho-anime-list-plugin.png
 tags:
   - Typecho
 categories:
-  - 某不存在的技术
-  - 杂七杂八的分享
+  - share
 ---
 
 ## 项目介绍

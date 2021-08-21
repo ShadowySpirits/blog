@@ -6,7 +6,7 @@ image: cf_logo.jpg
 tags:
   - CDN
 categories:
-  - 某不存在的技术
+  - share
 ---
 
 ## 全能王 Cloudflare

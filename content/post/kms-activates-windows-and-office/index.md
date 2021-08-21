@@ -8,8 +8,7 @@ tags:
   - KMS
   - Crack
 categories:
-  - 某不存在的技术
-  - 杂七杂八的分享
+  - share
 ---
 
 {{< tip info >}}

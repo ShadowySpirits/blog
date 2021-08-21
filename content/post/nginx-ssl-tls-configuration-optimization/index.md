@@ -7,7 +7,8 @@ tags:
   - Nginx
   - SSL
 categories:
-  - 某不存在的技术
+  - share
+  - tech
 ---
 
 本文描述的优化技巧基于 Nginx 1.17、OpenSSL 1.1.1d、TLS1.2 和 TLS1.3

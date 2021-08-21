@@ -8,8 +8,7 @@ tags:
   - Nextcloud
   - NAS
 categories:
-  - 某不存在的技术
-  - 杂七杂八的分享
+  - share
 ---
 
 最近抽空把 Nextcloud 从 14 升级到 15，这里记录一下升级流程和优化心得

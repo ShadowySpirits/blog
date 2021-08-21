@@ -1,7 +1,7 @@
 baseurl: https://blog.lv5.moe
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 5
+paginate: 8
 title: SSpiritsの秘密基地
 hasCJKLanguage: true
 enableEmoji: true
@@ -101,8 +101,8 @@ params:
       src: img/
     opengraph:
       enabled: true
-      local: false
-      src: https://source.unsplash.com/random/820x250?featured=<version>
+      local: true
+      src: ogbackground.jpg
 
   colorScheme:
     # Display toggle
