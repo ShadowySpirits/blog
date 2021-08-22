@@ -5,6 +5,7 @@ date: 2019-01-02T14:05:00+08:00
 image: cf_logo.jpg
 tags:
   - CDN
+  - Cloudflare
 categories:
   - share
 ---
