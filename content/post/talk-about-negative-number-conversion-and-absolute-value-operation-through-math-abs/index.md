@@ -58,7 +58,7 @@ list.get(index);
 
 {{< tip info >}}
 改为 `(count % list.size() + list.size()) % list.size()` 而不是 `Math.abs(count % list.size())` 是因为前者符合取余的数学定义
-详情可以看我的另一篇文章 [反码和补码的数学原理]({{< ref "the-mathematical-principle-of-ones-complement-and-twos-complement" >}})
+详情可以看我的另一篇文章 [反码和补码的数学原理]({{< relref "the-mathematical-principle-of-ones-complement-and-twos-complement" >}})
 {{< /tip >}}
 
 ## 运算符 - 的原理

@@ -4,5 +4,9 @@
             "source": "/api/disqus-proxy/(.*)",
             "destination": "/api/disqus_proxy.go"
         }
-    ]
+    ],
+    "trailingSlash": false,
+    "github": {
+        "silent": true
+    }
 }

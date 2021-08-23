@@ -9,7 +9,7 @@ categories:
   - tech
 ---
 
-本文旨在介绍如何用 Kotlin DSL 来代替 Builder 模式，如果你不知道什么是 DSL 或者不了解 Kotlin 中的 DSL 可以阅读我的上一篇文章：[Kotlin DSL 简介]({{< ref "introduction-to-kotlin-dsl" >}})
+本文旨在介绍如何用 Kotlin DSL 来代替 Builder 模式，如果你不知道什么是 DSL 或者不了解 Kotlin 中的 DSL 可以阅读我的上一篇文章：[Kotlin DSL 简介]({{< relref "introduction-to-kotlin-dsl" >}})
 
  <!--more-->
 

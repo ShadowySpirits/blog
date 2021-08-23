@@ -15,8 +15,8 @@ googleAnalytics: G-QNTL14TJQR
 DefaultContentLanguage: en
 
 permalinks:
-  post: /p/:slug/
-  page: /:slug/
+  post: /p/:slug
+  page: /:slug
 
 params:
   mainSections:
@@ -24,6 +24,7 @@ params:
   featuredImageField: image
   rssFullContent: true
   favicon: /favicon.ico
+  trimTrailingSlash: true
 
   footer:
     since: 2020

@@ -59,7 +59,7 @@ categories:
 
 ## 反码和补码的意义
 
-我在上一篇文章[由 Math.abs 谈负数转换与绝对值运算]({{< ref "talk-about-negative-number-conversion-and-absolute-value-operation-through-math-abs" >}})中有提到补码的作用：
+我在上一篇文章[由 Math.abs 谈负数转换与绝对值运算]({{< relref "talk-about-negative-number-conversion-and-absolute-value-operation-through-math-abs" >}})中有提到补码的作用：
 
 > 对于计算机来说加减是最基础的运算要设计的尽量简单，而减法相当于加上一个负数，所以完全可以使用加法来代替减法。但是这就出现了如何处理符号位的问题，short、int、long 的位数不同符号位自然也不同，为了避免运算前还需要判断符号位的位置，前人提出了将符号位也引入计算的机制，也就是补码。
 

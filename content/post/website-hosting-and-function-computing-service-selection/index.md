@@ -12,7 +12,7 @@ categories:
   - share
 ---
 
-在上一篇文章 [从 Typecho 到 Hugo 的选择与迁移]({{< ref "selection-and-migration-from-typecho-to-hugo" >}}) 中提到了 Hugo 很适合使用 Serverless 的方式部署并拓展功能。本文就通过博主 Cloudflare 和 Vercel 的使用经验对他们的网站托管（Cloudflare pages vs Vercel）和函数计算（Cloudflare workers vs Vercel function）服务进行简单的介绍和对比
+在上一篇文章 [从 Typecho 到 Hugo 的选择与迁移]({{< relref "selection-and-migration-from-typecho-to-hugo" >}}) 中提到了 Hugo 很适合使用 Serverless 的方式部署并拓展功能。本文就通过博主 Cloudflare 和 Vercel 的使用经验对他们的网站托管（Cloudflare pages vs Vercel）和函数计算（Cloudflare workers vs Vercel function）服务进行简单的介绍和对比
 
 <!--more-->
 
@@ -31,7 +31,7 @@ Cloudflare pages 和 Vercel 都是十分强大的网站托管服务，提供以�
 {{< tip success >}}
 - 集成 Cloudflare Access，可以自定义访问策略
 - 集成 Cloudflare Web Analytics，提供开箱即用的访问统计
-- 其他 Cloudflare 提供的功能，详情可以参考我之前写过的一篇文章：[个人网站 CDN 选用指北]({{< ref "individual-website-cdn-usage-reference" >}})
+- 其他 Cloudflare 提供的功能，详情可以参考我之前写过的一篇文章：[个人网站 CDN 选用指北]({{< relref "individual-website-cdn-usage-reference" >}})
 {{< /tip >}}
 
 Cloudflare pages 提供的功能简单但是一般情况下已经足够了，它的主要优点是可以和 Cloudflare 的其他服务结合使用，如 DNS、CDN、WAF、Apps 等
