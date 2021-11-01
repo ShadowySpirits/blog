@@ -127,12 +127,26 @@ menu:
       name: Home
       url: /
       weight: -100
-      pre: home
+      params:
+        icon: home
     - identifier: rss
       name: RSS
       url: /index.xml
       weight: 0
-      pre: rss
+      params:
+        icon: rss
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/ShadowySpirits
+      params:
+        icon: brand-github
+
+    - identifier: email
+      name: Email
+      url: mailto:admin@lv5.moe
+      params:
+        icon: mail
 
 related:
   includeNewer: true
