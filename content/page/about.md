@@ -8,9 +8,10 @@ aliases:
   - about-me
   - contact
 menu:
-    main: 
-        weight: -90
-        pre: user
+  main:
+    weight: -90
+    params:
+      icon: user
 ---
 
 博主标签：
