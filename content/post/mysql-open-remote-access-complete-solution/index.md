@@ -5,6 +5,7 @@ date: 2018-09-04T11:02:00+08:00
 image: security-groups.jpg
 tags:
   - Mysql
+  - DB
 categories:
   - tech
 ---
