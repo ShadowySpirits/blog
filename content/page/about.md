@@ -15,7 +15,7 @@ menu:
 ---
 
 博主标签：
-技术宅、动漫爱好者、京吹、懒癌晚期、氪不改命
+技术宅、二次元、京吹、懒癌晚期、玄不救非
 
 博主联系方式：
 [Github](https://github.com/ShadowySpirits)

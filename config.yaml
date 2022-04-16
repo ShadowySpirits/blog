@@ -51,7 +51,7 @@ params:
 
   comments:
     enabled: true
-    provider: disqusjs
+    provider: waline
 
     disqusjs:
       shortname: sspirits-blog
@@ -59,6 +59,19 @@ params:
       apiKey: iQD56ghANUh7XtvTtUTMvaHj1hFm59ABSUqHSfLnShxDj0xf9awYvpdPdcGbFeMG
       admin: sspirits
       adminLabel: 尊贵的站长
+
+    # Waline client configuration see: https://waline.js.org/en/reference/client.html
+    waline:
+      serverURL: https://comment.lv5.moe
+      visitor: true
+      copyright: false
+      avatar: retro
+      emoji:
+        - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq
+        - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji
+      requiredMeta:
+        - nick
+        - mail
 
     utterances:
       repo:
