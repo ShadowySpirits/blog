@@ -7,6 +7,7 @@ tags:
   - RocketMQ
   - 中间件
   - 源码分析
+  - 消息队列
 categories:
   - tech
 ---
@@ -54,7 +55,34 @@ categories:
 
 在同一个 JVM 中不管创建多少 consumer，它们总是共享同一个 MQClientInstance，这个 MQClientInstance 接管和所有 consumer 和 broker 的交互以及协调负载均衡
 
-![MQClientInstance](MQClientInstance.png)
+```mermaid
+classDiagram
+class MQProducer
+<<interface>> MQProducer
+MQProducer <|-- DefaultMQProducer
+ClientConfig <|-- DefaultMQProducer
+DefaultMQProducer: +DefaultMQProducerImpl defaultMQProducerImpl
+DefaultMQProducer: +start()
+
+DefaultMQProducer ..> DefaultMQProducerImpl: use
+DefaultMQProducerImpl: +MQClientInstance mQClientFactory
+DefaultMQProducerImpl: +start()
+
+class MQConsumer
+<<interface>> MQConsumer
+MQConsumer <|-- DefaultMQPushConsumer
+ClientConfig <|-- DefaultMQPushConsumer
+DefaultMQPushConsumer: +DefaultMQPushConsumerImpl defaultMQPushConsumerImpl
+DefaultMQPushConsumer: +start()
+
+DefaultMQPushConsumer ..> DefaultMQPushConsumerImpl: use
+DefaultMQPushConsumerImpl: +MQClientInstance mQClientFactory
+DefaultMQPushConsumerImpl: +start()
+
+DefaultMQProducerImpl ..> MQClientInstance: use
+DefaultMQPushConsumerImpl ..> MQClientInstance: use
+MQClientInstance: +start()
+```
 
 MQClientInstance 有两个负载均衡相关的方法：`rebalanceImmediately` 和 `doRebalance`
 前者在消费者启动和收到 Broker 通知时唤醒 RebalanceService 进行负载均衡，而 RebalanceService 调用后者执行负载均衡逻辑
