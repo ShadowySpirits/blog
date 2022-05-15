@@ -10,6 +10,7 @@ tags:
   - 中间件
   - 可观测性
   - 源码分析
+  - 消息队列
 categories:
   - tech
 ---

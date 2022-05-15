@@ -8,7 +8,6 @@ tags:
   - PVE
   - 黑苹果
 categories:
-  - tech
   - share
 ---
 
