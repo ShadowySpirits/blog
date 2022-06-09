@@ -47,7 +47,7 @@ params:
     readingTime: true
     license:
       enabled: true
-      default: Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> </br> 转载或引用本文时请遵守许可协议，注明出处、不得用于商业用途！
+      default: Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> </br> 转载或引用本文时请遵守许可协议，知会作者并注明出处 </br> 不得用于商业用途！
 
   comments:
     enabled: true

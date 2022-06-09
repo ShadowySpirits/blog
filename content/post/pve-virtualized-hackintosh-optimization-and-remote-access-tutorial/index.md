@@ -11,7 +11,7 @@ categories:
   - share
 ---
 
-PVE 虚拟化黑苹果显卡直通教程（核显&独显通用），低延迟远程访问方案：VNC、ARD、ToDesk、ParSec、Jump Desktop  等远程桌面协议/软件测试横评
+PVE 虚拟化黑苹果显卡直通教程（核显&独显通用），低延迟远程访问方案：VNC、ARD、ToDesk、ParSec、Jump Desktop 等远程桌面协议/软件测试横评
 
 <!--more-->
 
@@ -47,7 +47,7 @@ GPU: UHD630、AMD RX460
 
 ### 软件版本
 
-虚拟化平台：PVE 
+虚拟化平台：PVE
 
 主要软件包版本：
 
@@ -67,14 +67,14 @@ OpenCore&EFI 版本：[KVM-Opencore v16](https://github.com/thenickdude/KVM-Open
 
 因为我是通过远程访问使用黑苹果，所以并没有把要直通的 GPU 设置为主 GPU，这是本文和其他直通教程的主要区别。这样做的好处是可以用 PVE 的后台直接查看黑苹果启动情况、进入 Recovery 模式等
 
-参考 [Arch Linux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+参考 [Arch Linux wiki](<https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>)
 
 ### 启用 IOMMU
 
 这里引用 Arch Linux wiki 中对 IOMMU 的介绍：
 
 > IOMMU 是 Intel VT-d 和 AMD-Vi 的通用名称。
-> VT-d 指的是直接输入/输出虚拟化(Intel Virtualization Technology for Directed I/O)，不应与VT-x(x86平台下的Intel虚拟化技术，Intel Virtualization Technology)混淆。VT-x 可以让一个硬件平台作为多个“虚拟”平台，而 VT-d 提高了虚拟化的安全性、可靠性和 I/O 性能。
+> VT-d 指的是直接输入/输出虚拟化(Intel Virtualization Technology for Directed I/O)，不应与 VT-x(x86 平台下的 Intel 虚拟化技术，Intel Virtualization Technology)混淆。VT-x 可以让一个硬件平台作为多个“虚拟”平台，而 VT-d 提高了虚拟化的安全性、可靠性和 I/O 性能。
 
 首先在 BIOS 中开启 VT-d
 
@@ -172,7 +172,6 @@ IOMMU Group 6:
 options vfio-pci ids=1002:67ef,1002:aae0 disable_vga=1
 ```
 
-
 然后在 PVE 宿主机的 /etc/modprobe.d/blacklist.conf 中禁用其他显卡驱动，防止这些驱动在 vfio 前加载
 
 ```
@@ -195,6 +194,8 @@ blacklist radeon
 ```bash
 update-initramfs -u
 ```
+
+### 分配显卡
 
 重启后就可以将显卡分配给虚拟机了：
 
@@ -276,14 +277,14 @@ GPU： 直通 RX460 GeekBench 5 Metal 分 21000 左右，性能大致相当于 M
 分辨率：3440x1440（非 HiDPI）
 软件版本：各软件均使用当前最新免费/试用版，画质选择最高一档
 
-| 软件/协议    | 延迟         | 画质               | 按键映射                 | 多显示器       | 声音   | 文件传输 | 连接方式          |
-|--------------|--------------|--------------------|--------------------------|----------------|--------|----------|-------------------|
-| 原生 VNC     | 高           | 最好（支持 HiDPI） | 不支持修改               | 拼接所有显示器 | 不支持 | 不支持   | 直连              |
-| RealVNC      | 低（2ms）    | 最好               | 自定义任何按键映射         | 服务端配置     | 不支持 | 支持     | 直连              |
-| ARD          | 中等         | 一般（滚动时画面会糊）| 不支持修改               | 客户端选择     | 不支持 | 支持     | 直连              |
-| ToDesk       | 高          | 一般（有明显涂抹感） | 自定义功能键映射         | 客户端选择     | 不支持 | 支持     | 免费内网穿透      |
-| ParSec       | 中等（40ms）         | 较好（有轻微涂抹感）   | 不支持修改               | 客户端选择     | 支持   | 不支持   | 直连（自动 UPNP） |
-| Jump Desktop | 低（10ms）   | 差（画面最糊）     | 自定义任何按键映射 | 客户端选择     | 支持   | 不支持   | 直连（自动 UPNP） |
+| 软件/协议    | 延迟         | 画质                   | 按键映射           | 多显示器       | 声音   | 文件传输 | 连接方式          |
+| ------------ | ------------ | ---------------------- | ------------------ | -------------- | ------ | -------- | ----------------- |
+| 原生 VNC     | 高           | 最好（支持 HiDPI）     | 不支持修改         | 拼接所有显示器 | 不支持 | 不支持   | 直连              |
+| RealVNC      | 低（2ms）    | 最好                   | 自定义任何按键映射 | 服务端配置     | 不支持 | 支持     | 直连              |
+| ARD          | 中等         | 一般（滚动时画面会糊） | 不支持修改         | 客户端选择     | 不支持 | 支持     | 直连              |
+| ToDesk       | 高           | 一般（有明显涂抹感）   | 自定义功能键映射   | 客户端选择     | 不支持 | 支持     | 免费内网穿透      |
+| ParSec       | 中等（40ms） | 较好（有轻微涂抹感）   | 不支持修改         | 客户端选择     | 支持   | 不支持   | 直连（自动 UPNP） |
+| Jump Desktop | 低（10ms）   | 差（画面最糊）         | 自定义任何按键映射 | 客户端选择     | 支持   | 不支持   | 直连（自动 UPNP） |
 
 {{< tip info >}}
 除 ToDesk 外的方案若想要通过公网访问均需要被控端具备公网 IP 并配置端口映射或自行搭建内网穿透

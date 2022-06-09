@@ -3,6 +3,7 @@ title: RocketMQ 消息生命周期一：普通消息
 slug: rocketmq-message-life-cycle-normal-message
 date: 2022-05-04T11:05:00+08:00
 image: graphql_logo.jpg
+draft: true
 tags:
   - RocketMQ
   - 中间件
