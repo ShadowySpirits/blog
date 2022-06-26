@@ -289,7 +289,7 @@ Adguard Home 的部署教程网上有很多，能看到这里的人肯定也不�
 
 ![Openwrt DHCP Option 配置](openwrt-dhcp-option.jpg)
 
-### 为直接使用 ip 的 APP 设置路由
+### 为直接使用 IP 的 APP 设置路由
 
 直接使用 ip 的软件没有经过 DNS 自然就无法获取到 Clash 的 fake-ip，对于这种情况需要在主路由上添加静态路由将这些软件使用的 ip  的下一跳路由改为 Clash 的 fake-ip
 

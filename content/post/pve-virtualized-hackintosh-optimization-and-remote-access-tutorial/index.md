@@ -4,8 +4,9 @@ slug: pve-virtualized-hackintosh-gpu-passthrough-and-remote-access-tutorial
 date: 2022-04-13T17:14:00+08:00
 image: hackintosh-logo.png
 tags:
-  - Hackintosh
   - PVE
+  - MacOS
+  - Hackintosh
   - 黑苹果
 categories:
   - share
