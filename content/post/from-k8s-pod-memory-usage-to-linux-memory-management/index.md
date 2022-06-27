@@ -13,9 +13,9 @@ categories:
   - tech
 ---
 
-通过一个线 k8s 内存水位误报警深入分析 Linux 内存管理中各种内存指标计算的原理
+本文对一个线上 k8s 内存水位误报警深入分析 Linux 内存管理中各种内存指标计算的原理
 
-TLDR：如果你的应用统会涉及较多的文件读写，可以将 k8s 内存水位告警指标由 container_memory_working_set_bytes 改为 container_memory_rss。这样可以防止 page cache 占用空闲内存带来的误报警
+TLDR：如果你的应用会涉及较多的文件读写，可以将 k8s 内存水位告警指标由 container_memory_working_set_bytes 改为 container_memory_rss。这样可以防止 page cache 占用空闲内存带来的误报警
 
 <!--more-->
 
