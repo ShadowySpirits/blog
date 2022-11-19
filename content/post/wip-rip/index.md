@@ -1,9 +1,25 @@
-# Observability improvement for RocketMQ
+---
+title: RocketMQ 可观测性之 Metrics
+slug: rocketmq-observability-metrics
+date: 2022-11-15T11:16:09+08:00
+image: graphql_logo.jpg
+draft: true
+tags:
+  - RocketMQ
+  - 中间件
+  - 消息队列
+  - 可观测性
+  - Metrics
+categories:
+  - tech
+---
+
+# Tiered storage for RocketMQ
 
 ## Status
 
 - Current State: Proposed
-- Authors: [SSpirits](https://github.com/ShadowySpirits), [aaron-ai](https://github.com/aaron-ai), [WentingYang](https://github.com/yangwenting-ywt)
+- Authors: [SSpirits](https://github.com/ShadowySpirits)
 - Shepherds: [Yukon](https://github.com/zhouxinyu), [Zhanhui Li](https://github.com/lizhanhui)
 - Mailing List discussion: [dev@rocketmq.apache.org](mailto:dev@rocketmq.apache.org)
 - Pull Request: #PR_NUMBER
