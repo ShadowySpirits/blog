@@ -1,6 +1,6 @@
 ---
-title: RocketMQ 可观测性之 Metrics
-slug: rocketmq-observability-metrics
+title: RIP-46
+slug: rip-46
 date: 2022-11-15T11:16:09+08:00
 image: graphql_logo.jpg
 draft: true
