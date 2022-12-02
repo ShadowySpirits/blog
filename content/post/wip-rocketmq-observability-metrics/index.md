@@ -45,13 +45,13 @@ RocketMQ 的消息是按照队列的方式分区有序储存的，这种队列�
 
 RocketMQ 团队贡献的 RocketMQ exporter 已被 Prometheus 官方的开源 Exporter 生态所收录，提供了 Broker、Producer、Consumer 各个阶段丰富的监控指标
 
-{{< figure src="exporter-metrics-spec.png"title="exporter metrics spec" width="563" height="328" >}}
+{{< figure src="/p/rocketmq-observability-metrics/exporter-metrics-spec.png"title="exporter metrics spec" width="563" height="328" >}}
 
 ### Exporter 原理解析
 
 RocketMQ expoter 获取监控指标的流程如下图所示，Expoter 通过 MQAdminExt 向 RocketMQ 集群请求数据。获取的数据转换成 Prometheus 需要的格式，然后通过 /metics 接口暴露出来
 
-{{< figure src="rocketmq-exporter.jpg"title="rocketmq exporter" width="629" height="378" >}}
+{{< figure src="/p/rocketmq-observability-metrics/rocketmq-exporter.jpg"title="rocketmq exporter" width="629" height="378" >}}
 
 随着 RocketMQ 的演进，exporter 模式逐渐暴露出一些缺陷：
 
@@ -82,17 +82,17 @@ OpenTelemetry 是 CNCF 的一个可观测性项目，旨在提供可观测性领
 
 Pull 模式旨在与 Prometheus 兼容。在 K8s 部署环境中无需部署额外的组件，prometheus 可以通过社区提供的 K8s 服务发现机制（创建 PodMonitor、ServiceMonitor CDR）自动获取要拉取的 broker/proxy 列表，并从他们提供的 endpoint 中拉取 metrics 数据
 
-{{< figure src="pull-mode.jpg"title="pull mode" width="551" height="472" >}}
+{{< figure src="/p/rocketmq-observability-metrics/pull-mode.jpg"title="pull mode" width="551" height="472" >}}
 
 #### Push
 
 OpenTelemetry 推荐使用 Push 模式，这意味着它需要部署一个 collector 来传输指标数据
 
-{{< figure src="push-mode.jpg"title="push mode" width="583" height="444" >}}
+{{< figure src="/p/rocketmq-observability-metrics/push-mode.jpg"title="push mode" width="583" height="444" >}}
 
 OpenTelemetry 官方提供了 collector 的实现，支持对指标做自定义操作如过滤、富化，可以利用社区提供的插件实现自己的 collector。并且云厂商提供的可观测服务（如 AWS CloudWatch、阿里云 SLS）大多已经拥抱了 OpenTelemetry 社区，可以直接将数据推送到它们提供的 collector 中，无需额外的组件进行桥接
 
-{{< figure src="otel-collector.jpg"title="OpenTelemetry collector" width="919" height="513" >}}
+{{< figure src="/p/rocketmq-observability-metrics/otel-collector.jpg"title="OpenTelemetry collector" width="919" height="513" >}}
 
 #### 兼容 RocketMQ Exporter
 
@@ -100,7 +100,7 @@ OpenTelemetry 官方提供了 collector 的实现，支持对指标做自定义�
 
 RocketMQ 社区在 Exporter 中嵌入了一个 OpenTelemetry collector 实现，Broker 将 Metrics 数据导出到 Exporter，Exporter 提供了一个新的 endpoint（下图中的 metrics-v2）供 Prometheus 拉取
 
-{{< figure src="exporter-mode.jpg"title="exporter mode" width="767" height="447" >}}
+{{< figure src="/p/rocketmq-observability-metrics/exporter-mode.jpg"title="exporter mode" width="767" height="447" >}}
 
 ## 构建监控体系最佳实践
 
@@ -133,7 +133,7 @@ Broker 监控：
 
 有了完善的监控就可以对需要关注的指标配置告警，比如可以配置 Broker 监控中 Dispatch 延迟这个指标的告警：
 
-{{< figure src="broker-alert.jpg"title="broker alert" width="440" height="726" >}}
+{{< figure src="/p/rocketmq-observability-metrics/broker-alert.jpg"title="broker alert" width="440" height="726" >}}
 
 收到告警后可以联动监控查看具体原因，关联发送接口的失败率可以发现有 1.7% 的消费发送失败，对应的报错是没有创建订阅组：
 
