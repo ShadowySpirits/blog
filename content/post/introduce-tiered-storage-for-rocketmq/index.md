@@ -12,7 +12,7 @@ categories:
   - tech
 ---
 
-随着 RocketMQ 5.1.0 的正式发布，多级存储能力作为 RocketMQ 一个新的独立模块到达了 Technical Preview 里程碑：允许用户将消息从本地磁盘卸载到其他更便宜的存储介质，可以用较低的成本延长消息保留时间。本文详细介绍 RocketMQ 多级存储设计与实现
+随着 RocketMQ 5.1.0 的正式发布，多级存储作为 RocketMQ 一个新的独立模块到达了 Technical Preview 里程碑：允许用户将消息从本地磁盘卸载到其他更便宜的存储介质，可以用较低的成本延长消息保留时间。本文详细介绍 RocketMQ 多级存储设计与实现
 
 <!--more-->
 
