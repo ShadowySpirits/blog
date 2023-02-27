@@ -1,6 +1,6 @@
 ---
-title: RIP-WIP
-slug: rip-wip
+title: RIP-57
+slug: rip-57
 date: 2022-11-15T11:16:09+08:00
 image: graphql_logo.jpg
 draft: true
