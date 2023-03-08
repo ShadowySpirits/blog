@@ -16,13 +16,25 @@ PS：附部分 BT 下载工具 user-agent 和 peer-id 列表
 
  <!--more-->
 
+{{< tip info >}}
+如果你不知道如何安装 Deluge 请先阅读 [Deluge 一键安装脚本]({{< relref "deluge-oneclick-installation-script" >}})
+{{< /tip >}}
+
+## TL;DR
+
+可以使用 dzhuang 打包好的 docker iamge: [dzhuang/docker-deluge](https://hub.docker.com/r/dzhuang/docker-deluge)
+
+在设置中直接修改 user-agent 和 peer-id
+
+![config](deluge-config.png)
+
+{{< tip warning >}}
+dzhuang 提供了[源码仓库](https://github.com/dzhuang/deluge-alpine-build)，请使用者自行评估
+{{< /tip >}}
+
 ## 修改 user-agent
 
 打开文件 `/usr/lib/python3/dist-packages/deluge/core/core.py`
-
-{{< tip warning >}}
-如果 core.py 不在上述位置可以使用 find 命令找到 core.py 的位置：sudo find / -path '\*deluge/core/core.py'
-{{< /tip >}}
 
 修改 123 行左右：
 

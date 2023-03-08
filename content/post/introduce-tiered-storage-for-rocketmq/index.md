@@ -203,3 +203,19 @@ FileSegmentMetadata: +long sealTimestamp
 1. 元数据同步：如何可靠的在多个节点间同步元数据，slave 晋升时如何校准和补全缺失的元数据
 2. 禁止上传超过 confirm offset 的消息：为了避免消息回退，上传的最大 offset 不能超过 confirm offset
 3. slave 晋升时快速启动多级存储：只有 master 节点具有写权限，在 slave 节点晋升后需要快速拉起多级存储断点续传
+
+### 高级消息类型
+
+#### 事务消息
+
+事务半消息回查用到了 commitLog offset，而多级存储对消息的 commitLog offset 做了重新映射会导致兼容问题。当前默认禁止上传事务半消息 topic `RMQ_SYS_TRANS_HALF_TOPIC` 中的消息，确保其生命周期小于本地消息保留时间
+
+#### 定时消息
+
+{{< tip info >}}
+本节中的定时消息特指在 [RIP-43](https://shimo.im/docs/gXqme9PKKpIeD7qo/read) 中引入的基于时间轮的定时消息实现
+{{< /tip >}}
+
+为了支持超过消息保留时间的定时时长，基于时间轮的定时消息会在按照 `timerRollWindowSlots` 配置指定的时间滚动定时消息。比如 broker 配置的消息保留时间为 3 天，timerRollWindowSlots 配置的滚动间隔为 2 天，消息的定时时间为 7 天，那么每隔两天消息会重复写入.所以只要 `timerRollWindowSlots` 配置的时间小于消息保留时间即可
+
+为了避免消息频繁滚动带来的写放大，下一步计划在多级存储中实现多级时间轮机制，即将大于消息保留时间的定时消息写入多级存储中，在消息定时到期时读取回本地处理

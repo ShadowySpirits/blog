@@ -1,5 +1,5 @@
 ---
-title: Deluge一键安装脚本
+title: Deluge 一键安装脚本
 slug: deluge-oneclick-installation-script
 date: 2019-08-23T10:26:00+08:00
 image: deluge-logo.jpg
