@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["LoggingFormat",""]],"struct":[["ClientOption","`ClientOption` is the configuration of internal `Client`, which manages the connection and request with RocketMQ proxy."],["ProducerOption","The configuration of `Producer`."],["SimpleConsumerOption","The configuration of `SimpleConsumer`."]]};

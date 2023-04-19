@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["conf","Configuration of RocketMQ rust client."],["model","Data model of RocketMQ rust client."]],"struct":[["Producer","`Producer` is the core struct, to which application developers should turn, when publishing messages to RocketMQ proxy."],["SimpleConsumer","`SimpleConsumer` is a lightweight consumer to consume messages from RocketMQ proxy."]]};
