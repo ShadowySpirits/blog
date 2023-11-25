@@ -136,7 +136,7 @@ Node 0, zone   Normal
 上文中说的 buff/cache、free、available 都是从 free 命令看到的结果，而 k8s 的内存相关监控指标略有不同
 
 - free 命令是从 `/proc/meminfo` 中取值计算，相关原理和各字段解释可以阅读这篇文章： [/PROC/MEMINFO之谜](http://linuxperf.com/?p=142)
-- k8s cadvisor metrics 指标是从 `/sys/fs/cgroups/memory/memory.status` 中取值计算，可以阅读这篇文章来验证：[验证 Pod cgroup 限制](https://kubernetes.io/zh-cn/docs/concepts/scheduling-eviction/pod-overhead/#%E9%AA%8C%E8%AF%81-pod-cgroup-%E9%99%90%E5%88%B6)
+- k8s cadvisor metrics 指标是从 `/sys/fs/cgroups/memory/memory.stat` 中取值计算，可以阅读这篇文章来验证：[验证 Pod cgroup 限制](https://kubernetes.io/zh-cn/docs/concepts/scheduling-eviction/pod-overhead/#%E9%AA%8C%E8%AF%81-pod-cgroup-%E9%99%90%E5%88%B6)
 
 这里给出部分 k8s cadvisor metrics 指标的解释：
 
