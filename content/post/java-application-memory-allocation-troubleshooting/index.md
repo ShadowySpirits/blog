@@ -154,7 +154,7 @@ export MALLOC_CONF=prof:true,lg_prof_interval:30,lg_prof_sample:17
 jeprof --svg `which java` jeprof*.heap > jeprof.svg
 ```
 
-{{< figure src="/p/java-application-memory-allocation-troubleshooting/jemalloc-prof.webp"title="Jemalloc Prof" height="600px" >}}
+{{< figure src="/p/java-application-memory-allocation-troubleshooting/jemalloc-prof.webp"title="Jemalloc Prof" width="669px" height="645px" >}}
 
 这里看到分配内存占比 89% 的函数是 `Unsafe_AllocateMemory0`。但是 jemalloc 不能进一步分析 java 虚拟机的堆栈，我们需要进一步配合 [async-profler](https://github.com/async-profiler/async-profiler) 生成火焰图：
 
@@ -330,6 +330,11 @@ Address bits:       0x3210 :      0011 0010 0001 0000
 
 这是一种空间换时间的做法。实际上浪费的空间是虚拟内存的空间，用页表的开销换取了每次对象访问时的掩码操作，是一个非常值得的 trade off
 
+{{< tip info >}}
+更详细的设计可以参考 [OpenJDK Wiki](https://wiki.openjdk.org/display/zgc/Pointer+Metadata+using+Multi-Mapped+memory)
+{{< /tip >}}
+
+
 ### 观测真实内存占用
 
 Linux 中一个进程占用的内存有多种统计方式，可以分为 VSS、RSS、PSS、USS：
@@ -365,3 +370,5 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 ```
+
+可以发现 Pss_Shmem 是 RssShmem 的三分之一，更能反应真实内存占用
