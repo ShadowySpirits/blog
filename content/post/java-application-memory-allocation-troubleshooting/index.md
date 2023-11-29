@@ -154,7 +154,7 @@ export MALLOC_CONF=prof:true,lg_prof_interval:30,lg_prof_sample:17
 jeprof --svg `which java` jeprof*.heap > jeprof.svg
 ```
 
-{{< figure src="jemalloc-prof.webp"title="Jemalloc Prof" height="600px" >}}
+{{< figure src="/p/java-application-memory-allocation-troubleshooting/jemalloc-prof.webp"title="Jemalloc Prof" height="600px" >}}
 
 这里看到分配内存占比 89% 的函数是 `Unsafe_AllocateMemory0`。但是 jemalloc 不能进一步分析 java 虚拟机的堆栈，我们需要进一步配合 [async-profler](https://github.com/async-profiler/async-profiler) 生成火焰图：
 
