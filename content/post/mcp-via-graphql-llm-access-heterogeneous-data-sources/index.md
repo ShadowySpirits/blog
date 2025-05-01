@@ -2,7 +2,7 @@
 title: MCP with GraphQL —— LLM 大模型高效访问异构数据源
 slug: mcp-with-graphql-llm-access-heterogeneous-data-sources
 date: 2025-03-29T23:25:00+08:00
-image: cover.png
+image: cover.jpg
 tags:
   - LLM
   - MCP
@@ -18,7 +18,7 @@ categories:
 
 <!--more-->
 
-{{< figure src="/p/mcp-with-graphql-llm-access-heterogeneous-data-sources/operation-system-vs-llm.png" title="传统方法对比大模型" width="651" height="533" >}}
+{{< figure src="/p/mcp-with-graphql-llm-access-heterogeneous-data-sources/operation-system-vs-llm.jpg" title="传统方法对比大模型" width="651" height="533" >}}
 
 ## 前言
 
@@ -60,7 +60,7 @@ flowchart TD
 
 ## Talk is cheap, show me the demo!
 
-{{< figure src="/p/mcp-with-graphql-llm-access-heterogeneous-data-sources/llm-workflow.png" title="LLM Workflow" width="770" height="305" >}}
+{{< figure src="/p/mcp-with-graphql-llm-access-heterogeneous-data-sources/llm-workflow.jpg" title="LLM Workflow" width="770" height="305" >}}
 
 借助 LLM + Chatbox + MCP + GraphQL 的组合，用自然语言查询 RocketMQ 集群的状态、Topic 的信息、消息的内容等
 
@@ -74,7 +74,7 @@ Awesome！理论上只要是在我们系统内的信息，都可以通过**一�
 
 在这个组合（LLM + Chatbox + MCP + GraphQL）中，LLM 充当了自然语言处理的核心组件。用户通过 Chatbox 输入自然语言查询，LLM 将其转换为 GraphQL 查询语句，并通过 MCP （大模型调用工具的协议，这里可以认为是 GraphQL 客户端）提交到后端服务。后端服务返回的 JSON 格式查询结果又会被 LLM 转换为人类更易懂的格式，从而实现了自然语言与数据源之间的高效交互
 
-![Chatbox 中的对话](llm-example.png)![对应的 GraphQL 查询和结果](graphql-example.png)
+![Chatbox 中的对话](llm-example.jpg)![对应的 GraphQL 查询和结果](graphql-example.jpg)
 
 {{< tip >}}
 图中的 introspect-schema 用来获取 GraphQL 的 schema 信息，帮助 LLM 理解数据结构和字段

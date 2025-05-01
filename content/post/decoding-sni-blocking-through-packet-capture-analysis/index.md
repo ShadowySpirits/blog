@@ -2,7 +2,7 @@
 title: 网络抓包分析案例：SNI 阻断
 slug: decoding-sni-blocking-through-packet-capture-analysis
 date: 2025-05-01T11:02:00+08:00
-image: security-groups.jpg
+image: cover.jpg
 tags:
   - Network
 categories:
@@ -17,7 +17,7 @@ categories:
 
 因为客户使用 mTLS 进行认证和加密连接，并且只有部分设备出现问题。所以优先怀疑设备客户端证书非法或者过期。我们的服务端实现了对客户端证书链的校验逻辑，在证书校验不通过时会记录审计日志。所以我们请客户在测试环境中复现问题并进行抓包，希望能够拿到用户设备使用的证书以便于我们进行排查：
 
-![设备侧网络抓包](client-packet-capture.png)
+![设备侧网络抓包](client-packet-capture.jpg)
 
 看到这个抓包文件就发现事情并不这么简单：报文中并没有证书交换的过程，只有一个 `Client Hello` 报文，然后收到了 RST 报文导致连接重置。这说明服务端在没有接收到客户端证书的情况下断开了连接，我们在服务端的审计日志中没有在用户抓包时段看到任何证书校验失败的记录也佐证了这点
 
@@ -51,7 +51,7 @@ L4 负载均衡器
 
 通过和用户约定时间同时抓包发现，确实有请求到达了我们的应用服务器：
 
-![服务端网络抓包](server-packet-capture.png)
+![服务端网络抓包](server-packet-capture.jpg)
 
 但是对比客户端抓包，并没有出现 `Client Hello` 报文，并且更奇怪的是服务端抓包显示 RST 报文来自对端！也就是说客户端和服务端均认为对方发了 RST 报文，那么大概率就是“中间人”同时向两侧发的 RST 报文
 
