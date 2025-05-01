@@ -18,6 +18,8 @@ categories:
 
 <!--more-->
 
+{{< figure src="/p/mcp-with-graphql-llm-access-heterogeneous-data-sources/operation-system-vs-llm.png" title="传统方法对比大模型" width="651" height="533" >}}
+
 ## 前言
 
 在 RocketMQ 的日常运维中，我们经常需要访问不同的数据源来获取诊断信息。下图是我们诊断问题时需要访问的常见数据源和他们提供的查询接口：
@@ -57,6 +59,8 @@ flowchart TD
 为了解决这个问题，我们可以使用 LLM 结合 MCP 来实现高效的数据访问。通过这种方式，用**自然语言一站式查询**所需的信息，提高问题诊断的效率
 
 ## Talk is cheap, show me the demo!
+
+{{< figure src="/p/mcp-with-graphql-llm-access-heterogeneous-data-sources/llm-workflow.png" title="LLM Workflow" width="770" height="305" >}}
 
 借助 LLM + Chatbox + MCP + GraphQL 的组合，用自然语言查询 RocketMQ 集群的状态、Topic 的信息、消息的内容等
 
